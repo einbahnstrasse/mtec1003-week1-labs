@@ -150,6 +150,7 @@ Follow the instructions line-by-line.
 12. Open a new terminal window. Create a directory called mtec1003. What command did you use?
 ----------
 
+mkdir mtec1003
 
 
 
@@ -157,6 +158,7 @@ Follow the instructions line-by-line.
 13. Change your directory so that you're in mtec1003. What command did you use?
 ----------
 
+cd mtec1003
 
 
 
@@ -174,6 +176,7 @@ Copy and paste the output of pwd below.
 ----------
 
 
+/c/Users/Isaiah/mtec1003
 
 
 
@@ -187,6 +190,7 @@ Copy and paste the output below.
 ----------
 
 
+animals/
 
 
 
@@ -199,6 +203,7 @@ $ ls
 Copy and paste the output below.
 ----------
 
+animals/  food/
 
 
 
@@ -214,6 +219,7 @@ Copy and paste the output below.
 
 animals	foo	food
 
+animals/  foo/  food/
 
 
 
@@ -227,6 +233,7 @@ Copy and paste the output below.
 ----------
 
 
+/c/Users/Isaiah/mtec1003/foo/bar/baz/qux
 
 
 
@@ -240,6 +247,7 @@ Copy and paste the output below.
 ----------
 
 
+/c/Users/Isaiah/mtec1003/foo/bar
 
 
 
@@ -253,6 +261,7 @@ Copy and paste the output below.
 ----------
 
 
+/c/Users/Isaiah/mtec1003/foo/bar/baz/qux
 
 
 
@@ -266,6 +275,7 @@ Copy and paste the output below.
 ----------
 
 
+/c/Users/Isaiah/mtec1003
 
 
 
@@ -280,7 +290,16 @@ Copy and paste the first 3 lines from the output into the space below.
 ----------
 
 
+first ls -1:
 
+animals/
+foo/
+food/
+
+Next  ls -1 AFTER typing rmdir animals:
+
+foo/
+food/
 
 
 ==========
@@ -293,6 +312,7 @@ Copy and paste the output into the space below.
 ----------
 
 
+/c/Users/Isaiah
 
 
 
@@ -305,7 +325,11 @@ $ pwd
 Copy and paste the output into the space below.
 ----------
 
+cd /Volumes
+bash: cd: /Volumes: No such file or directory
 
+then with PWD:
+/c/Users/Isaiah
 
 
 
@@ -319,6 +343,8 @@ Copy and paste the output into the space below.
 ----------
 
 
+ cd /unknown_folder
+bash: cd: /unknown_folder: No such file or directory
 
 
 
@@ -332,6 +358,7 @@ Copy and paste the output into the space below.
 ----------
 
 
+/c/Users/Isaiah/mtec1003
 
 
 
@@ -344,6 +371,7 @@ Copy and paste the output into the space below.
 ----------
 
 
+Isaiah-Laptop
 
 
 
@@ -351,6 +379,7 @@ Copy and paste the output into the space below.
 28. Make sure you're back in your mtec1003, which should be in your home folder.  What command would you use to find out if you're in the right folder?  Write the command below, then run it.
 ----------
 
+cd ~/mtec1003
 
 
 
@@ -363,7 +392,7 @@ Otherwise skip this question/step!
 ----------
 
 
-
+Done! ❤️
 
 
 ==========
@@ -379,7 +408,13 @@ lemon
 Write the one command you used below:
 ----------
 
+mkdir pineapple
 
+$ mkdir orange
+
+$ mkdir strawberry
+
+$ mkdir lemon
 
 
 
@@ -390,6 +425,7 @@ Write the command you used to create the directory below:
 ----------
 
 
+mkdir aardvark
 
 
 
@@ -399,6 +435,10 @@ Write the command you used to create the directory below:
 What is the modified date of the aardvark directory?
 ----------
 
+aardvark/  foo/  food/  lemon/  orange/  pineapple/  strawberry/
+
+and the date for the directory is (Based on ls -t)
+aardvark/  lemon/  strawberry/  orange/  pineapple/  foo/  food/
 
 
 
@@ -414,7 +454,9 @@ What command did you use?
 ----------
 
 
+mkdir -p dir1/dir2/dir3
 
+mkdir -p foo/bar/baz
 
 
 ==========
@@ -423,6 +465,7 @@ What command did you use?
 What command did you use?
 ----------
 
+cd ~/baz
 
 
 
@@ -432,17 +475,22 @@ What command did you use?
 
 What command did you use?
 ----------
-
-
-
-
+so I tried 
+$ cd ~/foo
+,
+cd ../../.. ~/foo/bar/baz
+,
+and then i tried
+cd ../../..
+,
+The system denies me access saying it cannot acces directory yet it exist? in Mtec1003 there's a foo/bar/baz folder yet when using the directory command to move up I can only locate ( /c )
 
 ==========
 36. What command is used to delete empty directories?
 ----------
 
 
-
+rmdir
 
 
 ==========
@@ -450,7 +498,7 @@ What command did you use?
 ----------
 
 
-
+pwd
 
 
 ==========
@@ -458,6 +506,7 @@ What command did you use?
 ----------
 
 
+-a
 
 
 
@@ -465,15 +514,18 @@ What command did you use?
 39. What's the shortcut for home directory?
 ----------
 
+/Users/username
+$ cd ~/Users/username
+$ cd ~/Users/home
 
-
-
+But
+cd /usr/ worked
 
 ==========
 40. What's a pathname?
 ----------
 
-
+The name of a File in the system
 
 
 
@@ -481,11 +533,11 @@ What command did you use?
 41. What is a directory?
 ----------
 
-
-
-
+Like in cd or change Directory
+Directory is the current path or file you are located in 
 
 ==========
 42. What's the *absolute* path (full path, starting at root) to your user's Downloads directory?
 ----------
 
+Absolute paths originate from the very beginning of the computer's systems, normally starting from USER.
