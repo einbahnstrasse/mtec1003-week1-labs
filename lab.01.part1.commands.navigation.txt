@@ -150,15 +150,14 @@ Follow the instructions line-by-line.
 12. Open a new terminal window. Create a directory called mtec1003. What command did you use?
 ----------
 
-
+mkdir mtec1003
 
 
 ==========
 13. Change your directory so that you're in mtec1003. What command did you use?
 ----------
 
-
-
+cd mtec1003
 
 
 ==========
@@ -173,8 +172,7 @@ If it doesn't ask for help before moving on!
 Copy and paste the output of pwd below.
 ----------
 
-
-
+/c/Users/Isaiah/mtec1003
 
 
 ==========
@@ -186,6 +184,7 @@ $ ls
 Copy and paste the output below.
 ----------
 
+animals/
 
 
 
@@ -199,7 +198,7 @@ $ ls
 Copy and paste the output below.
 ----------
 
-
+animals/  food/
 
 
 
@@ -212,10 +211,7 @@ $ ls
 Copy and paste the output below.
 ----------
 
-animals	foo	food
-
-
-
+animals/  foo/  food/
 
 ==========
 18. Type:
@@ -226,9 +222,7 @@ $ pwd
 Copy and paste the output below.
 ----------
 
-
-
-
+/c/Users/Isaiah/mtec1003/foo/bar/baz/qux
 
 ==========
 19. Type:
@@ -239,9 +233,11 @@ $ pwd
 Copy and paste the output below.
 ----------
 
+/c/Users/Isaiah/mtec1003/foo/bar
 
-
-
+the ../.. ---> this points the terminal at a different folder like CD aka changing
+the directory and thus it's like looking at the 2nd to last folder.
+../.. means to go up directories 
 
 ==========
 20. Type:
@@ -252,8 +248,7 @@ $ pwd
 Copy and paste the output below.
 ----------
 
-
-
+/c/Users/Isaiah/mtec1003/foo/bar/baz/qux
 
 
 ==========
@@ -265,8 +260,7 @@ $ pwd
 Copy and paste the output below.
 ----------
 
-
-
+/c/Users/Isaiah/mtec1003
 
 
 ==========
@@ -278,10 +272,16 @@ $ ls -l
 
 Copy and paste the first 3 lines from the output into the space below.
 ----------
+first ls -1:
 
+animals/
+foo/
+food/
 
+Next  ls -1 AFTER typing rmdir animals:
 
-
+foo/
+food/
 
 ==========
 23. Type:
@@ -292,6 +292,7 @@ $ pwd
 Copy and paste the output into the space below.
 ----------
 
+/c/Users/Isaiah
 
 
 
@@ -304,10 +305,11 @@ $ pwd
 
 Copy and paste the output into the space below.
 ----------
+cd /Volumes
+bash: cd: /Volumes: No such file or directory
 
-
-
-
+then with PWD:
+/c/Users/Isaiah
 
 ==========
 25. Type:
@@ -318,9 +320,12 @@ $ pwd
 Copy and paste the output into the space below.
 ----------
 
+$ cd /unknown_folder
+bash: cd: /unknown_folder: No such file or directory
 
+and then
 
-
+/c/Users/Isaiah
 
 ==========
 26. Type:
@@ -331,8 +336,7 @@ $ pwd
 Copy and paste the output into the space below.
 ----------
 
-
-
+/c/Users/Isaiah/mtec1003
 
 
 ==========
@@ -343,7 +347,7 @@ $ hostname
 Copy and paste the output into the space below.
 ----------
 
-
+Isaiah-Laptop
 
 
 
@@ -351,7 +355,7 @@ Copy and paste the output into the space below.
 28. Make sure you're back in your mtec1003, which should be in your home folder.  What command would you use to find out if you're in the right folder?  Write the command below, then run it.
 ----------
 
-
+cd ~/mtec1003
 
 
 ==========
@@ -362,7 +366,7 @@ cd ~/mtec1003
 Otherwise skip this question/step!
 ----------
 
-
+Done! <3
 
 
 
